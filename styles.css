@@ -1,0 +1,240 @@
+html {
+  font-size: 16px;
+}
+body {
+  background: #e6e6e6;
+  font-family: 'Roboto Condensed', 'Roboto', sans-serif;
+  margin: 20px;
+}
+
+@media (min-width: 769px) {
+  .pd-container {
+    padding-left: calc((100vw - 808px) / 2);
+    padding-right: calc((100vw - 808px) / 2);
+  }
+}
+.pd-container-basic,
+.pd-container-extended {
+  background: #fff;
+  border-radius: 16px;
+  color: #1b202b;
+  padding: 24px;
+}
+.pd-container-extended {
+  display: none;
+}
+@media (min-width: 769px) {
+  .pd-container-basic,
+  .pd-container-extended {
+    padding: 40px 80px 80px 80px;
+  }
+}
+.pd-headline {
+  font-size: 24px;
+  line-height: 32px;
+  margin-top: 28px;
+}
+.pd-text-main {
+  color: #4c5566;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* button */
+.pd-button {
+  border: 3px solid #02c39a;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 12px 16px;
+  width: 100%;
+}
+.pd-button.full {
+  background: #02c39a;
+  color: #fff;
+}
+.pd-button.outline {
+  background: #fff;
+  color: #02c39a;
+}
+.pd-button.accept,
+.pd-button.accept-choice {
+  margin-top: 36px;
+}
+.pd-button.detail,
+.pd-button.accept-final {
+  margin-top: 20px;
+}
+.pd-button.accept-all {
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+.pd-button.full:hover {
+  background: #02b08b;
+  border: 3px solid #02b08b;
+}
+.pd-button.full:focus {
+  background: #02b08b;
+  border: 4px solid #9ae7d7;
+}
+.pd-button.outline:hover {
+  border: 3px solid #02b08b;
+}
+.pd-button.outline:focus {
+  background: #e6f9f5;
+}
+@media (min-width: 769px) {
+  .pd-button-container {
+    display: flex;
+  }
+  .pd-button {
+    display: inline-block;
+    width: auto;
+  }
+  .pd-button.accept-choice {
+    order: 1;
+    margin-left: 16px;
+  }
+  .pd-button.accept-final {
+    margin-top: 36px;
+  }
+  .pd-button.accept,
+  .pd-button.detail {
+    margin-top: 20px;
+  }
+  .pd-button.accept-all {
+    margin-top: 16px;
+    margin-bottom: 0;
+  }
+  .pd-button.detail {
+    margin-left: 16px;
+  }
+}
+
+/* back button */
+.pd-back-button {
+  background: #eef2f7;
+  border: 2px solid #e3e8ef;
+  border-radius: 40px;
+  display: inline-block;
+  height: 40px;
+  left: 0;
+  position: relative;
+  text-decoration: none;
+  top: 0;
+  width: 40px;
+}
+.pd-back-button-arrow {
+  color: #748094;
+  left: 30.67%;
+  position: absolute;
+  top: 30.67%;
+}
+.pd-back-button-text {
+  color: #a2aebe;
+  font-size: 14px;
+  margin-left: 60px;
+  line-height: 40px;
+  text-align: center;
+}
+
+/* card */
+.pd-card {
+  border: 3px solid #eef2f7;
+  border-radius: 8px;
+  margin-top: 20px;
+  padding: 16px;
+}
+.pd-card-headline {
+  color: #4c5566;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 24px;
+}
+.pd-card-text {
+  color: #4c5566;
+  font-size: 16px;
+  line-height: 24px;
+}
+@media (min-width: 769px) {
+  .pd-card {
+    margin-top: 40px;
+  }
+}
+.pd-horizontal-line {
+  height: 2px;
+  background: #eef2f7;
+}
+
+/* always active */
+.pd-always-active {
+  color: #02c39a;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 16px;
+  margin-top: 28px;
+}
+
+/* toggle switch */
+.pd-switch-container {
+  display: inline-block;
+  margin-top: 28px;
+}
+.pd-switch {
+  display: inline-block;
+  height: 24px;
+  position: relative;
+  width: 40px;
+}
+.pd-switch input {
+  height: 0;
+  opacity: 0;
+  width: 0;
+}
+input:checked + .pd-slider,
+input:focus + .pd-slider {
+  background: #e3e8ef;
+}
+input:checked + .pd-slider:before {
+  transform: translateX(16px);
+}
+.pd-slider {
+  background-color: #ccc;
+  border-radius: 34px;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+}
+.pd-slider:before {
+  border-radius: 50%;
+  bottom: 4px;
+  content: '';
+  height: 16px;
+  position: absolute;
+  transition: 0.4s;
+  width: 16px;
+  left: 4px;
+}
+.slider-active:before {
+  background: #02c39a;
+}
+.slider-inactive:before {
+  background: #4c5566;
+}
+.pd-switch-text {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 16px;
+  margin-left: 16px;
+}
+.pd-switch-text.text-inactive {
+  color: #748094;
+}
+.pd-switch-text.text-active {
+  color: #02c39a;
+}

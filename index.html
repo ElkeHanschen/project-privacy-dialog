@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <title>Privacy Dialog</title>
+</head>
+
+<body>
+    <div class="pd-container">
+        <div class="pd-container-basic" data-element="pd-show-basic">
+            <h2 class="pd-headline">Cookies and Tracking</h2>
+            <p class="pd-text-main">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos illum odit porro cum
+                exercitationem temporibus magni, optio, laudantium sit facilis, fuga asperiores unde non incidunt error
+                esse debitis. Expedita officia dicta praesentium, fuga eius natus saepe possimus a libero reprehenderit
+                <a href="#">Lorem ipsum dolor sit amet</a>. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Aliquam, magni? <a href="#">Lorem, ipsum dolor.</a> Lorem ipsum dolor sit amet consectetur adipisicing
+                elit.</p>
+            <button class="pd-button full accept">Cool with me</button>
+            <button class="pd-button outline detail" data-element="pd-button-detail">Details - click me</button>
+        </div>
+        <div class="pd-container-extended" data-element="pd-show-extended">
+            <a href="#" class="pd-back-button" data-element="pd-back-button">
+                <svg class="pd-back-button-arrow" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 8a1 1 0 011-1h14a1 1 0 110 2H1a1 1 0 01-1-1z"
+                        fill="currentColor" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M8.707.293a1 1 0 010 1.414L2.414 8l6.293 6.293a1 1 0 11-1.414 1.414l-7-7a1 1 0 010-1.414l7-7a1 1 0 011.414 0z"
+                        fill="currentColor" />
+                </svg>
+                <span class="pd-back-button-text">Back</span>
+            </a>
+            <h2 class="pd-headline">Cookies and Tracking - Details</h2>
+            <p class="pd-text-main">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos illum odit porro cum
+                exercitationem temporibus magni, optio, laudantium sit facilis, fuga asperiores unde non incidunt error
+                esse debitis. Expedita officia dicta praesentium, fuga eius natus saepe possimus a libero reprehenderit
+                <a href="#">Lorem ipsum dolor sit amet</a>. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Aliquam, magni?</p>
+            <button class="pd-button full accept-all">Accept all</button>
+            <div class="pd-card">
+                <h3 class="pd-card-headline">Essential Functionality</h3>
+                <div class="pd-horizontal-line"></div>
+                <p class="pd-card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam eius illo
+                    adipisci. Necessitatibus hic rerum corrupti ratione porro perferendis alias mollitia minima
+                    asperiores quas, debitis nihil consectetur, dignissimos odio amet!</p>
+                <div class="pd-horizontal-line"></div>
+                <span class="pd-always-active">always on</span>
+            </div>
+            <div class="pd-card">
+                <h3 class="pd-card-headline">Personalisation</h3>
+                <div class="pd-horizontal-line"></div>
+                <p class="pd-card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus eaque natus
+                    fugit perferendis id sed architecto sit totam officia aut minima ut voluptatibus incidunt fuga,
+                    vitae laborum a assumenda fugiat?</p>
+                <div class="pd-horizontal-line"></div>
+                <div class="pd-switch-container">
+                    <label class="pd-switch">
+                        <input type="checkbox" checked>
+                        <span class="pd-slider slider-inactive"></span>
+                    </label>
+                    <span class="pd-switch-text text-inactive">off</span>
+                </div>
+            </div>
+            <div class="pd-card">
+                <h3 class="pd-card-headline">Marketing / Use of Data</h3>
+                <div class="pd-horizontal-line"></div>
+                <p class="pd-card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero distinctio,
+                    sapiente at atque nihil neque maiores voluptates architecto porro numquam deserunt laudantium non
+                    quisquam similique consequatur natus reprehenderit sit quia.</p>
+                <div class="pd-horizontal-line"></div>
+                <div class="pd-switch-container">
+                    <label class="pd-switch">
+                        <input type="checkbox" checked>
+                        <span class="pd-slider slider-active"></span>
+                    </label>
+                    <span class="pd-switch-text text-active">on</span>
+                </div>
+            </div>
+            <div class="pd-button-container">
+                <button class="pd-button outline accept-choice">Confirm selection</button>
+                <button class="pd-button full accept-final">Final confirm</button>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
