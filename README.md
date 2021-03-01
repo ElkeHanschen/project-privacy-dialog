@@ -19,4 +19,4 @@
 ### ToDo
 
 - refactor JavaScript
-- toggle switch is not done yet!
+- check all stylings (e.g. also hover)
